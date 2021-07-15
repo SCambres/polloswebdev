@@ -23,6 +23,8 @@ body {
 .footer {
   padding: 10px;
   border-top: solid 1px #ccc;
+  letter-spacing: 10px;
+  text-decoration: underline;
 }
 
 .primario {
@@ -30,6 +32,9 @@ body {
   padding: 5px;
   border: 0px;
   color: #fff;
+  position: relative;
+  right: -3px;
+  border-radius: 3px;
 }
 
 .secundario {
@@ -37,4 +42,7 @@ body {
   padding: 5px;
   border: 0px;
   color: #fff;
+  position: relative;
+  right: -15px;
+  border-radius: 3px;
 }
