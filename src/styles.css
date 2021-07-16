@@ -2,6 +2,39 @@ body {
   background-color: #eee;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+li {
+  float: left;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+li a {
+  display: block;
+  color: #eee;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #126680;
+}
+
 .caja {
   background-color: #fff;
   border-style: solid;
@@ -18,13 +51,13 @@ body {
 .header {
   padding: 10px;
   border-bottom: solid 1px #ccc;
+  margin-top: 47px;
 }
 
 .footer {
   padding: 10px;
   border-top: solid 1px #ccc;
-  letter-spacing: 10px;
-  text-decoration: underline;
+  letter-spacing: 2px;
 }
 
 .primario {
@@ -45,4 +78,12 @@ body {
   position: relative;
   right: -15px;
   border-radius: 3px;
+}
+
+.primario:hover {
+  background-color: #30cab0;
+}
+
+.secundario:hover {
+  background-color: #eee;
 }
