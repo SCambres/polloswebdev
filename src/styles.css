@@ -52,7 +52,7 @@ li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #aaaaaa;
+  background-color: #447e76;
   min-width: 160px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
