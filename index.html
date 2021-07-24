@@ -10,13 +10,34 @@
       type="text/css"
       media="screen"
     />
+
+    <script>
+      var x = document.getElementById("demo");
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+    </script>
   </head>
 
   <body>
     <ul>
-      <li class="active"><a href="#Inicio">Inicio</a></li>
-      <li><a href="https://www.akme.es/blog/noticias/">Blog</a></li>
-      <li><a href="https://www.akme.es/#akme">Acerca de</a></li>
+      <li><a href="https://www.akme.es/#akme" target="_blank">Acerca de</a></li>
+      <li>
+        <a href="https://www.akme.es/blog/noticias/" target="_blank">Blog</a>
+        <li class="active"><a href="#Inicio">Inicio</a></li>
+      </li>
     </ul>
 
     <br />
@@ -40,5 +61,10 @@
         <a href="#">Link 3</a>
       </div>
     </div>
+
+    <br />
+    <h3>Prueba de botón</h3>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
   </body>
 </html>
