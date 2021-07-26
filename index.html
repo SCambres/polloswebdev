@@ -2,13 +2,15 @@
 <html lang="en" xmlns="lang">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="SGG, SCO">
     <title>Document</title>
     <link
       rel="stylesheet"
       href="./src/styles.css"
       type="text/css"
       media="screen"
+      
     />
 
     <script>
@@ -63,8 +65,27 @@
     </div>
 
     <br />
-    <h3>Prueba de botón</h3>
-    <p id="demo">A Paragraph</p>
-    <button type="button" onclick="myFunction()">Try it</button>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <form action="/sing" method="POST">
+      <label for="fname">Nombre: </label>
+      <input type="text" id="fname" name="fname">
+      <br>
+      <br>
+      <label for="email">email:</label>
+      <input type="email" id="email" name="email" placeholder="geekshubs@academy.es">
+      <br><br>
+      <textarea name="message" rows="10" cols="50"> Introduce aqui la descripción  </textarea>
+  </form>
+  <br><br>
+  <p>Seleccina tu nivel </p>
+  <input type="radio" id="junior" name="nivel" value="junior">
+  <label for="junior">junior</label>
+  <br>
+  <input type="radio" id="semisenior" name="nivel" value="semisenior">
+  <label for="junior">semisenior</label>
+  <br><input type="radio" id="senior" name="nivel" value="senior">
+  <label for="junior">senior</label>
+  <br><br>
+  <button type="button">Enviar</button>
   </body>
 </html>
